@@ -1,0 +1,99 @@
+Microchip Technology Inc, v1.26 (A)
+
+Tool Name:
+  /opt/microchip/xc16/v1.26/bin/bin/../bin/elf-ld
+
+Command:
+  -p24HJ128GP202 \
+  -o \
+  ./build/test/TestBuild.out \
+  -L/opt/microchip/xc16/v1.26/bin/bin/.. \
+  -L/opt/microchip/xc16/v1.26/bin/bin/../../lib \
+  -L/opt/microchip/xc16/v1.26/bin/bin/../../support/PIC24E/gld \
+  -L/opt/microchip/xc16/v1.26/bin/bin/../../support/PIC24F/gld \
+  -L/opt/microchip/xc16/v1.26/bin/bin/../../support/PIC24H/gld \
+  -L/opt/microchip/xc16/v1.26/bin/bin/../../support/dsPIC30F/gld \
+  -L/opt/microchip/xc16/v1.26/bin/bin/../../support/dsPIC33E/gld \
+  -L/opt/microchip/xc16/v1.26/bin/bin/../../support/dsPIC33F/gld \
+  build/test/out/test_main_runner.o \
+  build/test/out/test_main.o \
+  build/test/out/unity.o \
+  build/test/out/main.o \
+  build/test/out/cmock.o \
+  -Tp24HJ128GP202.gld.00 \
+  -Map=./build/test/TestOutput.map \
+  --report-mem \
+  -start-group \
+  --library=lega-pic30-elf \
+  --library=m-elf \
+  --library=lega-c-elf \
+  -end-group \
+
+
+Optional library libp24HJ128GP202.a not found
+Archive member included because of file (symbol)
+
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(crt0_standard.o)
+                              (__resetPRI)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(data_init_standard.o)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(crt0_standard.o) (__data_init_standard)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(addsf3.eo)
+                              build/test/out/unity.o (___subsf3)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(feqltle.eo)
+                              build/test/out/unity.o (___ltsf2)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(fgtge.eo)
+                              build/test/out/unity.o (___gtsf2)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(fne.eo)
+                              build/test/out/unity.o (___nesf2)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(fpack.eo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__fpack)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(funpack2.eo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__funpack2)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(futil.eo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(addsf3.eo) (__fPropagateNaN)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
+                              build/test/out/unity.o (___mulsf3)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
+                              build/test/out/unity.o (___udivsi3)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(umodsi3.eo)
+                              build/test/out/unity.o (___umodsi3)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
+                              build/test/out/unity.o (___mulsi3)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(fcompare.eo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(feqltle.eo) (__fcompare)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(funpack.eo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/libm-elf.a(funpack2.eo) (__funpack)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(setjmp.XXeso)
+                              build/test/out/test_main_runner.o (_setjmp)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(longjmp.XXeso)
+                              build/test/out/unity.o (_longjmp)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fflush.XXeo)
+                              build/test/out/unity.o (__DNKfflush)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fputc.XXeo)
+                              build/test/out/unity.o (_fputc)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(xfiles.XXeo)
+                              build/test/out/unity.o (__Stdout)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(xfwprep.XXeo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fputc.XXeo) (__Fwprep)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fclose.XXelo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(xfwprep.XXeo) (__Closreg)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(xatexit.XXelo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fclose.XXelo) (__Atexit)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(free.XXeo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fclose.XXelo) (_free)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(malloc.XXeo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(free.XXeo) (__Aldata)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(xgetmem.XXeo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(malloc.XXeo) (__Getmem)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(close.Leo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fclose.XXelo) (_close)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(write.Leo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fflush.XXeo) (_write)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(remove.Leo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(fclose.XXelo) (_remove)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(sbrk.Leo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-c-elf.a(xgetmem.XXeo) (_sbrk)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(c30_uart.Leo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(write.Leo) (___C30_UART)
+/opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(brk.Lelo)
+                              /opt/microchip/xc16/v1.26/bin/bin/../../lib/liblega-pic30-elf.a(sbrk.Leo) (_brk)
