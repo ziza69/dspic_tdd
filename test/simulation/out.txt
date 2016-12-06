@@ -1,5 +1,0 @@
-test_main.c:14:test_main_NeedToImplement:IGNORE: Need to Implement main
-
------------------------
-1 Tests 0 Failures 1 Ignored 
-OK
